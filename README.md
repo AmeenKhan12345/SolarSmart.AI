@@ -37,5 +37,3 @@ Our platform is built on a modern, robust technology stack:
 ### Prerequisites
 - Python 3.8+
 - An active internet connection
-https://github.com/your-username/solarsmart-ai.git
-   cd solarsmart-ai
