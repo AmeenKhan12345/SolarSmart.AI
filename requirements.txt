@@ -1,0 +1,25 @@
+# Core App
+streamlit>=1.36.0
+plotly>=5.22.0
+pandas>=2.2.2
+numpy>=1.26.4
+python-dotenv>=1.0.1
+
+# Machine Learning
+scikit-learn>=1.5.0
+joblib>=1.4.2
+
+# Data Fetching & APIs
+requests>=2.32.3
+geopy>=2.4.1
+
+# Database (Supabase)
+supabase>=2.4.0
+postgrest>=0.15.0
+gotrue>=2.8.0
+storage3>=0.6.0
+realtime>=1.0.4
+
+# Optional (development / notebook use)
+matplotlib>=3.9.0
+notebook>=7.2.1
