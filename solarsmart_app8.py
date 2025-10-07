@@ -113,20 +113,19 @@ class WeatherAPI:
         3. Processes the data into a clean pandas DataFrame.
         """
         try:
-            # 1. Geocode location using OpenWeatherMap API for reliability
-            api_key = st.secrets["openweathermap"]["api_key"]
-            geocode_url = f"http://api.openweathermap.org/geo/1.0/direct?q={location}&limit=1&appid={api_key}"
-            
-            geo_response = requests.get(geocode_url)
-            geo_response.raise_for_status() # Will raise an error for bad status codes
-            location_data = geo_response.json()
+            # 1. Geocode location using OpenWeatherMap API for reliability
+            api_key = st.secrets["openweathermap"]["api_key"]
+            geocode_url = f"http://api.openweathermap.org/geo/1.0/direct?q={location}&limit=1&appid={api_key}"
+            geo_response = requests.get(geocode_url)
+            geo_response.raise_for_status() # Will raise an error for bad status codes
+            location_data = geo_response.json()
 
-            if not location_data:
-                st.error(f"Could not find coordinates for '{location}'. Please be more specific (e.g., 'Paris, France').")
-                return None, None, None
-            
-            lat = location_data[0]['lat']
-            lon = location_data[0]['lon']
+            if not location_data:
+                st.error(f"Could not find coordinates for '{location}'. Please be more specific (e.g., 'Paris, France').")
+                return None, None, None
+
+            lat = location_data[0]['lat']
+            lon = location_data[0]['lon']
 
             # 2. Call Open-Meteo API
             api_url = "https://api.open-meteo.com/v1/forecast"
