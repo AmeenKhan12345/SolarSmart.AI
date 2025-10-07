@@ -497,17 +497,17 @@ def train_and_save_model(location):
 
 
 # --- 1. SET UP YOUR SUPABASE CONNECTION ---
-# It's best practice to use st.secrets for these in a deployed app
-SUPABASE_URL = ""
-SUPABASE_KEY = ""
-TABLE_NAME = "" # The name of your table in Supabase
+# Access the secrets from Streamlit's secrets management
+SUPABASE_URL = st.secrets["supabase"]["url"]
+SUPABASE_KEY = st.secrets["supabase"]["key"]
+TABLE_NAME = st.secrets["supabase"]["table_name"]
 
 # Initialize the Supabase client
 try:
+    # The rest of your code remains the same
     supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 except Exception as e:
     st.error(f"Error initializing Supabase client: {e}")
-    # Stop the app if the client can't be created
     st.stop()
 
 # --- 2. DATA FETCHING FUNCTION ---
