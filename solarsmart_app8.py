@@ -114,6 +114,7 @@ class WeatherAPI:
         """
         try:
             # 1. Geocode location to get coordinates
+            time.sleep(1)
             geolocator = Nominatim(user_agent="solar_forecaster_app")
             location_data = geolocator.geocode(location)
             if location_data is None:
