@@ -3,12 +3,17 @@
 An award-winning platform that combines custom IoT hardware with an AI-powered application to make solar energy intelligent, efficient, and reliable.
 
 **SolarSmart.ai** is an end-to-end solution for solar performance management. Our proprietary "Live Digital Twin" IoT device captures critical performance metrics in real-time, streaming them to our cloud-native dashboard. This platform provides users with live monitoring, predictive energy forecasts, and a powerful "what-if" simulator to model and optimize system changes.
+View Live - "https://solarsmartai.streamlit.app/"
 
 ## 🏆 Award-Winning Innovation
 
 Our vision and technology were recognized at the prestigious **Shell Changemakers** event in Bangalore, where our team was honored to be awarded the position of **First Runner-Up**.
 
-A 3D render of our proprietary IoT hardware and its components. *(Note: Please replace the link above with a public URL to your image.)*
+A 3D render of our proprietary IoT hardware and its components.
+<img width="276" height="274" alt="image" src="https://github.com/user-attachments/assets/afa185a9-ee30-406c-a091-f10947116c58" />
+<img width="887" height="886" alt="image" src="https://github.com/user-attachments/assets/36fc2ab0-47ce-41ab-8ddb-a2a47b0292dd" />
+
+
 
 ## 🚀 Project Showcase
 
