@@ -112,8 +112,7 @@ class WeatherAPI:
         2. Calls the Open-Meteo API for forecast data.
         3. Processes the data into a clean pandas DataFrame.
         """
-        # --- NEW AND IMPROVED CODE BLOCK ---
-        try:
+        try:
             # 1. Geocode location using OpenWeatherMap API for reliability
             api_key = st.secrets["openweathermap"]["api_key"]
             geocode_url = f"http://api.openweathermap.org/geo/1.0/direct?q={location}&limit=1&appid={api_key}"
